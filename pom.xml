@@ -184,6 +184,12 @@
     </plugins>
   </build>
 
+  <scm>
+    <url>https://github.com/jibx/jibx-parent</url>
+    <connection>scm:git:git://github.com/jibx/jibx-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:jibx/jibx-parent.git</developerConnection>
+  </scm>
+
   <licenses>
     <license>
       <name>BSD</name>
