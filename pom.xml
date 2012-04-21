@@ -176,7 +176,7 @@
         <altDeploymentRepository>local-file::default::file:///${workspace}/bin/obr</altDeploymentRepository>
           <instructions>
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
-            <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName> <!-- This is better name than the package -->
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
             <Bundle-Version>${project.version}</Bundle-Version> <!-- Just being careful -->
             <Export-Package>${project.artifactId}.*;version=${project.version}</Export-Package>    <!-- Override jibxPackage or jibxPackageExport with actual packages -->
             <Import-Package>*;resolution:=optional</Import-Package>    <!-- Since I want these to be optional -->
