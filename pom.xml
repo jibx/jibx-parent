@@ -116,12 +116,12 @@
         <plugin>
           <groupId>org.jibx</groupId>
           <artifactId>maven-jibx-plugin</artifactId>
-          <version>1.2.4-SNAPSHOT</version>
+          <version>${jibx-plugin-version}</version>
         </plugin>
         <plugin>
           <groupId>org.jibx</groupId>
           <artifactId>jibx-maven-plugin</artifactId>
-          <version>1.2.4-SNAPSHOT</version>
+          <version>${jibx-plugin-version}</version>
         </plugin>
         <plugin>
 		    <groupId>org.apache.maven.plugins</groupId>
@@ -227,27 +227,27 @@
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-run</artifactId>
-      <version>1.2.4-SNAPSHOT</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-extras</artifactId>
-      <version>1.2.4-SNAPSHOT</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-bind</artifactId>
-      <version>1.2.4-SNAPSHOT</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-schema</artifactId>
-      <version>1.2.4-SNAPSHOT</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-tools</artifactId>
-      <version>1.2.4-SNAPSHOT</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.osgi</groupId>
