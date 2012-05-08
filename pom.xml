@@ -28,9 +28,9 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <OBRRepositoryIndex>repository.xml</OBRRepositoryIndex>
+    <projectName>jibx</projectName>	<!-- Default -->
+    <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
     <publicReleaseRepository>http://repo2.maven.org/maven2</publicReleaseRepository>
-    <OBRRepositoryIndexURL>${project.organization.url}/${OBRRepositoryIndex}</OBRRepositoryIndexURL>    <!-- Full URL to the repository ? This SHOULD be the same as the OBRRepositoryIndex in the manifest -->
     <workspace>${jibx-root}</workspace>	<!-- This value (The location of the root jibx directory) is in settings.xml -->
     <jibx-version>1.2.5-SNAPSHOT</jibx-version>
     <jibx-schema-version>1.0.4</jibx-schema-version>
@@ -60,7 +60,6 @@
     <profile> 
       <id>sonatype-oss-release</id>
       <properties>
-        <OBRRepositoryIndex>repository.xml</OBRRepositoryIndex>
 	<JibxRepositoryLocation>http://oss.sonatype.org/service/local/staging/deploy/maven2/</JibxRepositoryLocation>	<!-- release -->
 	<JibxRepositoryId>sonatype-nexus-staging</JibxRepositoryId>	<!-- release -->
       </properties>
@@ -173,9 +172,9 @@
         <extensions>true</extensions>
         <configuration>
         <prefixUrl>${publicReleaseRepository}</prefixUrl>
-        <remoteOBR>${OBRRepositoryIndex}</remoteOBR>
+        <remoteOBR>${remoteOBRName}</remoteOBR>
       <!-- The obr is copied to the site root in the jibx-site project -->
-        <altDeploymentRepository>local-file::default::file:///${workspace}/bin/obr</altDeploymentRepository>
+        <altDeploymentRepository>local-file::default::file:///${workspace}/bin/obr/repository</altDeploymentRepository>
           <instructions>
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
