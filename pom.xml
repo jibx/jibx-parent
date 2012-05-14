@@ -12,7 +12,7 @@
 
   <groupId>org.jibx.config</groupId>
   <artifactId>jibx-parent</artifactId>
-  <version>5-SNAPSHOT</version>
+  <version>4-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>jibx-parent - JiBX parent project</name>
@@ -32,9 +32,9 @@
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
     <publicReleaseRepository>http://repo2.maven.org/maven2</publicReleaseRepository>
     <workspace>${jibx-root}</workspace>	<!-- This value (The location of the root jibx directory) is in settings.xml -->
-    <jibx-version>1.2.4.1</jibx-version>
+    <jibx-version>1.2.4.1-SNAPSHOT</jibx-version>
     <jibx-schema-version>1.0.4</jibx-schema-version>
-    <jibx-plugin-version>1.2.4.1</jibx-plugin-version>
+    <jibx-plugin-version>1.2.4.1-SNAPSHOT</jibx-plugin-version>
     <jibx-build-plugin-version>1.2.4</jibx-build-plugin-version>    <!-- TODO(don) Plugin version to use in jibx builds (initially can't be current version) -->
 
     <joda-time-version>2.1</joda-time-version>
