@@ -12,7 +12,7 @@
 
   <groupId>org.jibx.config</groupId>
   <artifactId>jibx-parent</artifactId>
-  <version>5-SNAPSHOT</version>
+  <version>5</version>
 
   <packaging>pom</packaging>
   <name>jibx-parent - JiBX parent project</name>
