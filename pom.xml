@@ -12,7 +12,7 @@
 
   <groupId>org.jibx.config</groupId>
   <artifactId>jibx-parent</artifactId>
-  <version>7.0.2-SNAPSHOT</version>
+  <version>7.0.2</version>
 
   <packaging>pom</packaging>
   <name>jibx-parent - JiBX parent project</name>
@@ -42,7 +42,7 @@
 
     <workspace>${jibx-root}</workspace>	<!-- This value (The location of the root jibx directory) is in settings.xml -->
     <jibx-version>1.2.5</jibx-version>
-    <jibx-schema-version>1.0.9</jibx-schema-version>
+    <jibx-schema-version>1.1.0</jibx-schema-version>
     <jibx-plugin-version>1.2.5</jibx-plugin-version>
     <jibx-build-plugin-version>1.2.4</jibx-build-plugin-version>    <!-- TODO(don) Plugin version to use in jibx builds (initially can't be current version) -->
 
