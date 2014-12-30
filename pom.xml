@@ -7,7 +7,7 @@
   <parent>
     <artifactId>oss-parent</artifactId>
     <groupId>org.sonatype.oss</groupId>
-    <version>7</version>
+    <version>9</version>
   </parent>
 
   <groupId>org.jibx.config</groupId>
@@ -202,8 +202,8 @@
 
   <scm>
     <url>https://github.com/jibx/jibx-parent</url>
-    <connection>scm:git:git://github.com/jibx/jibx-parent.git</connection>
-    <developerConnection>scm:git:git@github.com:jibx/jibx-parent.git</developerConnection>
+    <connection>scm:git:https://github.com/jibx/jibx-parent</connection>
+    <developerConnection>scm:git:https://github.com/jibx/jibx-parent</developerConnection>
   </scm>
 
   <licenses>
