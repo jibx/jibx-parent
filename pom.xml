@@ -212,11 +212,6 @@
           <version>${jibx-plugin-version}</version>
         </plugin>
         <plugin>
-          <groupId>org.jibx</groupId>
-          <artifactId>jibx-maven-plugin</artifactId>
-          <version>${jibx-plugin-version}</version>
-        </plugin>
-        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.1.0</version>
