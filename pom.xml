@@ -41,7 +41,7 @@
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>
             <name>Sonatype Nexus Snapshots</name>
-            <url>${sonatypeOssDistMgmtSnapshotsUrl}</url>
+            <url>${snapshotRepository}</url>
         </snapshotRepository>
         <repository>
             <id>sonatype-nexus-staging</id>
@@ -52,14 +52,13 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
-        <arguments />
+    <arguments />
 
     <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
     <snapshotRepository>http://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
     <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
     <stagingRepository>http://oss.sonatype.org/content/groups/staging</stagingRepository>
-    <publicReleaseRepository>http://repo1.maven.apache.org/maven2</publicReleaseRepository>
+    <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
 
     <projectName>jibx</projectName>	<!-- Default -->
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
@@ -153,7 +152,7 @@
         <id>local-snapshot</id>
         <properties>
             <snapshotRepository>https://maven.jx.tourgeek.com/repository/maven-snapshots</snapshotRepository>
-            <sonatypeOssDistMgmtSnapshotsUrl>https://maven.jx.tourgeek.com/repository/maven-snapshots/</sonatypeOssDistMgmtSnapshotsUrl>
+            <publicRepository>https://maven.jx.tourgeek.com/repository/maven-public</publicRepository>
         </properties>
     </profile>
   </profiles>
@@ -487,7 +486,7 @@
       <groupId>cglib</groupId> 
       <artifactId>cglib</artifactId> 
       <version>2.2.2</version> 
-    </dependency> 
+    </dependency>
     </dependencies>
   </dependencyManagement>
   
