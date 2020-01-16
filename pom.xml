@@ -136,7 +136,7 @@
                                     <goal>sign</goal>
                                 </goals>
                                 <configuration>
-                                    <keyname>${gpg.keyname}</keyname>
+                                    <keyname>3B8193C7FCCD41A77F055B6D8F147D14613F136D</keyname>
                                     <passphraseServerId>${gpg.keyname}</passphraseServerId>
                                 </configuration>
                             </execution>
