@@ -6,7 +6,7 @@
 
   <groupId>org.jibx.config</groupId>
   <artifactId>jibx-parent</artifactId>
-  <version>7.1.6-SNAPSHOT</version>
+  <version>7.1.5-SNAPSHOT</version>
 
   <packaging>pom</packaging>
   <name>jibx-parent - JiBX parent project</name>
@@ -54,10 +54,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <arguments />
 
-    <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
-    <snapshotRepository>http://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
-    <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
-    <stagingRepository>http://oss.sonatype.org/content/groups/staging</stagingRepository>
+    <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
+    <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
+    <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
+    <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
     <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
 
     <projectName>jibx</projectName>	<!-- Default -->
@@ -141,11 +141,11 @@
                 </plugins>
             </build>
       <properties>
-        <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
-        <snapshotRepository>http://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
-        <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
-        <stagingRepository>http://oss.sonatype.org/content/groups/staging</stagingRepository>
-        <publicReleaseRepository>http://repo.maven.apache.org/maven2</publicReleaseRepository>
+        <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
+        <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
+        <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
+        <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
+        <publicReleaseRepository>https://repo.maven.apache.org/maven2</publicReleaseRepository>
       </properties>
     </profile>
     <profile>
