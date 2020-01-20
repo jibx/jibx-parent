@@ -59,6 +59,7 @@
     <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
     <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
     <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
+    <bundleUrl>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundleUrl>  <!-- Dont's use the default - public repo -->
 
     <projectName>jibx</projectName>	<!-- Default -->
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
@@ -313,6 +314,7 @@
           <prefixUrl>${publicReleaseRepository}</prefixUrl>
           <remoteOBR>${remoteOBRName}</remoteOBR> <!-- The filename of the remote obj (NONE if not used) -->
           <obrDeploymentRepository>${obrDeploy}</obrDeploymentRepository>   <!-- The location to deploy obr xml file -->
+          <bundleUrl>${bundleUrl}</bundleUrl>
           <instructions>
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
