@@ -62,7 +62,7 @@
     <bundleUrl>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundleUrl>  <!-- Dont's use the default - public repo -->
 
     <projectName>jibx</projectName>	<!-- Default -->
-    <remoteOBRName>${projectName}-repository-${parent.version}.xml</remoteOBRName>
+    <remoteOBRName>${projectName}-repository-${project.parent.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
     <artifactPath>artifacts/repositories/${projectName}-repository/src/main/resources/obr</artifactPath>
     <obrDeploy>local-file::default::file:///${workspace}/${artifactPath}/repository</obrDeploy>
