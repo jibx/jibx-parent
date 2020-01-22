@@ -64,14 +64,16 @@
     <projectName>jibx</projectName>	<!-- Default -->
     <remoteOBRName>${projectName}-repository-${parent.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
-    <obrDeploy>local-file::default::file:///${workspace}/artifacts/artifacts/src/main/resources/obr/repository</obrDeploy>
+    <artifactPath>artifacts/repositories/${projectName}-repository/src/main/resources/obr</artifactPath>
+    <obrDeploy>local-file::default::file:///${workspace}/${artifactPath}/repository</obrDeploy>
     <!-- obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy --> <!-- Remote -->
 
     <jibx-root>${user.home}/workspace-jibx/jibx</jibx-root> <!-- Override this value (The location of the root jibx directory) in settings.xml -->
     <workspace>${jibx-root}</workspace>
-    <jibx-version>1.3.2</jibx-version>
-    <jibx-schema-version>1.2.1</jibx-schema-version>
-    <jibx-plugin-version>1.3.2</jibx-plugin-version>
+    <jibx-version>1.3.3-SNAPSHOT</jibx-version>
+    <jibx-external-version>1.3.3-SNAPSHOT</jibx-external-version>
+    <jibx-schema-library-version>1.2.1-SNAPSHOT</jibx-schema-library-version>
+    <jibx-maven-plugin-version>1.3.3-SNAPSHOT</jibx-maven-plugin-version>
     <jibx-build-plugin-version>1.3.1</jibx-build-plugin-version>    <!-- TODO(don) Plugin version to use in jibx builds (initially can't be current version) -->
 
     <joda-time-version>2.10.5</joda-time-version>
@@ -216,7 +218,7 @@
         <plugin>
           <groupId>org.jibx</groupId>
           <artifactId>jibx-maven-plugin</artifactId>
-          <version>${jibx-plugin-version}</version>
+          <version>${jibx-maven-plugin-version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
