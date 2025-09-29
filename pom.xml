@@ -71,10 +71,10 @@
 
     <jibx-root>${user.home}/workspace-jibx/jibx</jibx-root> <!-- Override this value (The location of the root jibx directory) in settings.xml -->
     <workspace>${jibx-root}</workspace>
-    <jibx-version>1.4.2</jibx-version>
-    <jibx-external-version>1.4.2</jibx-external-version>
+    <jibx-version>1.4.4</jibx-version>
+    <jibx-external-version>1.4.4</jibx-external-version>
     <jibx-schema-library-version>1.2.4</jibx-schema-library-version>
-    <jibx-maven-plugin-version>1.4.2</jibx-maven-plugin-version>
+    <jibx-maven-plugin-version>1.4.4</jibx-maven-plugin-version>
     <jibx-build-plugin-version>1.4.1</jibx-build-plugin-version>    <!-- TODO(don) Plugin version to use in jibx builds (initially can't be current version) -->
 
     <joda-time-version>2.10.14</joda-time-version>
