@@ -54,8 +54,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <arguments />
 
-    <releaseRepository>https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2</releaseRepository>
-    <snapshotRepository>hhttps://ossrh-staging-api.central.sonatype.com/content/repositories/snapshots</snapshotRepository>
+      <!-- releaseRepository>https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2</releaseRepository -->
+      <releaseRepository>https://ossrh-staging-api.central.sonatype.com/service/local/release/deploy/maven2</releaseRepository>
+      <snapshotRepository>hhttps://ossrh-staging-api.central.sonatype.com/content/repositories/snapshots</snapshotRepository>
     <publicRepository>https://ossrh-staging-api.central.sonatype.com/content/groups/public</publicRepository>
     <stagingRepository>https://ossrh-staging-api.central.sonatype.com/content/groups/staging</stagingRepository>
     <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
