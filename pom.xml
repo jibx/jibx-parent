@@ -54,10 +54,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <arguments />
 
-    <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
-    <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
-    <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
-    <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
+    <releaseRepository>https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2</releaseRepository>
+    <snapshotRepository>hhttps://ossrh-staging-api.central.sonatype.com/content/repositories/snapshots</snapshotRepository>
+    <publicRepository>https://ossrh-staging-api.central.sonatype.com/content/groups/public</publicRepository>
+    <stagingRepository>https://ossrh-staging-api.central.sonatype.com/content/groups/staging</stagingRepository>
     <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
     <bundleUrl>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundleUrl>  <!-- Dont's use the default - public repo -->
 
@@ -151,10 +151,10 @@
                 </plugins>
             </build>
       <properties>
-        <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
-        <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
-        <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
-        <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
+        <releaseRepository>https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2</releaseRepository>
+        <snapshotRepository>https://ossrh-staging-api.central.sonatype.com/content/repositories/snapshots</snapshotRepository>
+        <publicRepository>https://ossrh-staging-api.central.sonatype.com/content/groups/public</publicRepository>
+        <stagingRepository>https://ossrh-staging-api.central.sonatype.com/content/groups/staging</stagingRepository>
         <publicReleaseRepository>https://repo.maven.apache.org/maven2</publicReleaseRepository>
       </properties>
     </profile>
@@ -359,7 +359,7 @@
     <url>https://github.com/jibx/jibx-parent</url>
     <connection>scm:git:https://github.com/jibx/jibx-parent</connection>
     <developerConnection>scm:git:https://github.com/jibx/jibx-parent</developerConnection>
-    <tag>jibx-parent-7.1.5</tag>
+    <tag>jibx-parent-7.1.12</tag>
   </scm>
 
   <licenses>
