@@ -75,7 +75,7 @@
     <jibx-external-version>1.4.5</jibx-external-version>
     <jibx-schema-library-version>1.2.5</jibx-schema-library-version>
     <jibx-maven-plugin-version>1.4.5</jibx-maven-plugin-version>
-    <jibx-build-plugin-version>1.4.1</jibx-build-plugin-version>    <!-- TODO(don) Plugin version to use in jibx builds (initially can't be current version) -->
+    <jibx-build-plugin-version>1.4.2</jibx-build-plugin-version>    <!-- TODO(don) Plugin version to use in jibx builds (initially can't be current version) -->
 
     <joda-time-version>2.10.14</joda-time-version>
     <cxf-version>3.0.3</cxf-version>
@@ -228,7 +228,7 @@
         <plugin>
           <groupId>org.jibx</groupId>
           <artifactId>jibx-maven-plugin</artifactId>
-          <version>${jibx-maven-plugin-version}</version>
+          <version>${jibx-build-plugin-version}</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
